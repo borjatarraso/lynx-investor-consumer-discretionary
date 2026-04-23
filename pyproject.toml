@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name            = "lynx-investor-consumer-discretionary"
-version         = "3.0"
+version         = "3.0.1"
 description     = "Lynx Consumer Discretionary — Fundamental analysis specialized for junior mining, uranium, copper & basic materials companies"
 readme          = "README.md"
 requires-python = ">=3.10"

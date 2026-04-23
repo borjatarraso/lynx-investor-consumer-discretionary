@@ -72,7 +72,7 @@ Show Version
     When I Run Version
     Then The Exit Code Should Be 0
     Then The Output Should Contain "lynx-discretionary"
-    Then The Output Should Contain "1.0"
+    Then The Output Should Contain "3.0"
     Then The Output Should Contain "Lince Investor Suite"
 
 Show About

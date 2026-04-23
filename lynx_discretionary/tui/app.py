@@ -662,7 +662,7 @@ class LynxDiscretionaryApp(PagingAppMixin, App):
         from lynx_discretionary.tui.themes import register_all_themes, THEME_NAMES
         try:
             register_all_themes(self)
-            self.theme = THEME_NAMES[0]  # mining-dark
+            self.theme = THEME_NAMES[0]  # discretionary-dark
         except Exception:
             pass  # Fall back to Textual's default theme
 

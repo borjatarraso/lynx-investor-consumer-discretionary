@@ -1,4 +1,4 @@
-"""Export package for mining analysis reports."""
+"""Export package for Consumer Discretionary analysis reports."""
 
 from __future__ import annotations
 from enum import Enum

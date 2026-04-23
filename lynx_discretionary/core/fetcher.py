@@ -1,6 +1,6 @@
 """Financial data fetching (shim over :mod:`lynx_investor_core.fetcher`).
 
-Injects the mining ``CompanyProfile`` / ``FinancialStatement`` dataclasses as
+Injects the consumer-discretionary ``CompanyProfile`` / ``FinancialStatement`` dataclasses as
 factories so the shared fetcher can populate domain-specific objects.
 """
 

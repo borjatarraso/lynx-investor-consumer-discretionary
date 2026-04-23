@@ -14,8 +14,8 @@ from lynx_discretionary.export import export_report, ExportFormat
 
 @pytest.fixture
 def sample_report():
-    p = CompanyProfile(ticker="TEST", name="Test Mining Corp",
-                       sector="Basic Materials", industry="Gold",
+    p = CompanyProfile(ticker="TEST", name="Test Retailer Corp",
+                       sector="Consumer Cyclical", industry="Specialty Retail",
                        country="Canada", market_cap=100_000_000)
     p.tier = CompanyTier.MICRO
     p.stage = CompanyStage.EXPLORER
@@ -60,7 +60,7 @@ class TestTxtExport:
         with tempfile.NamedTemporaryFile(suffix=".txt", delete=False) as f:
             p = export_report(sample_report, "txt", Path(f.name))
             content = p.read_text()
-            assert "Test Mining Corp" in content
+            assert "Test Retailer Corp" in content
 
     def test_contains_stage(self, sample_report):
         with tempfile.NamedTemporaryFile(suffix=".txt", delete=False) as f:

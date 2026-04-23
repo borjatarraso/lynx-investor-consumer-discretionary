@@ -35,7 +35,7 @@ def get_relevance(
     """Look up relevance for a metric given tier and stage.
 
     Stage overrides take precedence over tier-based lookups because
-    the development stage is the primary axis for mining analysis.
+    the development stage is the primary axis for Consumer Discretionary analysis.
     """
     stage_override = _STAGE_OVERRIDES.get(metric_key, {}).get(stage)
     if stage_override is not None:
@@ -117,7 +117,7 @@ _STAGE_OVERRIDES: dict[str, dict[CompanyStage, Relevance]] = {
     "capex_intensity": {CompanyStage.GRASSROOTS: X, CompanyStage.EXPLORER: P, CompanyStage.DEVELOPER: C, CompanyStage.PRODUCER: P, CompanyStage.ROYALTY: C},
     "same_store_sales_proxy": {CompanyStage.GRASSROOTS: I, CompanyStage.EXPLORER: P, CompanyStage.DEVELOPER: C, CompanyStage.PRODUCER: C, CompanyStage.ROYALTY: C},
     "operating_leverage": {CompanyStage.GRASSROOTS: X, CompanyStage.EXPLORER: P, CompanyStage.DEVELOPER: P, CompanyStage.PRODUCER: R, CompanyStage.ROYALTY: R},
-    # MINING QUALITY
+    # DISCRETIONARY QUALITY
     "quality_score": {CompanyStage.GRASSROOTS: C, CompanyStage.EXPLORER: C, CompanyStage.DEVELOPER: C, CompanyStage.PRODUCER: P, CompanyStage.ROYALTY: P},
     "insider_alignment": {CompanyStage.GRASSROOTS: C, CompanyStage.EXPLORER: C, CompanyStage.DEVELOPER: C, CompanyStage.PRODUCER: P, CompanyStage.ROYALTY: R},
     "financial_position": {CompanyStage.GRASSROOTS: C, CompanyStage.EXPLORER: C, CompanyStage.DEVELOPER: C, CompanyStage.PRODUCER: P, CompanyStage.ROYALTY: R},

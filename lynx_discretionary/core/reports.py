@@ -1,6 +1,6 @@
 """SEC EDGAR filings (shim over :mod:`lynx_investor_core.reports`).
 
-Binds the mining-specific User-Agent product identifier and wires the agent's
+Binds the consumer-discretionary-specific User-Agent product identifier and wires the agent's
 ``Filing`` dataclass so the shared fetcher can construct proper domain objects.
 """
 

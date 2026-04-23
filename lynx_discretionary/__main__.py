@@ -1,3 +1,4 @@
+# PYTHON_ARGCOMPLETE_OK
 """Entry point for lynx-discretionary."""
 
 from lynx_discretionary.cli import run_cli
